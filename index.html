@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- FONT AWESOME ICONS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1 class="logo">Weatherapp</h1>
+
+      <div class="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="search"
+          class="search"
+          id="searchInput"
+          placeholder="Search for cities, directions or zip"
+        />
+      </div>
+    </header>
+
+    <!-- LOCATIONS -->
+    <section class="locations">
+      <h2>Your locations</h2>
+
+      <div class="location-card">
+        <div class="location-info">
+          <h3>Cordoba, Argentina</h3>
+          <p>
+            <i class="fa-solid fa-cloud-sun"></i>
+            Partly sunny
+          </p>
+        </div>
+
+        <div class="location-temp">
+          <span class="temp">26°c</span>
+          <span class="range">High 26° · Min 16°</span>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-info">
+          <h3>Washington D.C, DC</h3>
+          <p>
+            <i class="fa-solid fa-cloud"></i>
+            Mostly cloudy
+          </p>
+        </div>
+
+        <div class="location-temp">
+          <span class="temp">7°c</span>
+          <span class="range">High 9° · Min 2°</span>
+        </div>
+      </div>
+
+      <button class="edit-btn">
+        <i class="fa-solid fa-pen"></i> Edit
+      </button>
+    </section>
+
+    <!-- CURRENT WEATHER -->
+    <section class="current-weather">
+      <h2>Cordoba, Argentina</h2>
+
+      <div class="current-main">
+        <i class="fa-solid fa-cloud-rain weather-icon"></i>
+        <div class="current-temp">26°c</div>
+      </div>
+
+      <p class="condition">
+        A few brief showers in the morning and intervals of sun and clouds
+      </p>
+
+      <div class="high-low">
+        <span><i class="fa-solid fa-arrow-up"></i> High 26°</span>
+        <span><i class="fa-solid fa-arrow-down"></i> Min 16°</span>
+      </div>
+
+      <div class="alert">
+        <i class="fa-solid fa-circle-info"></i>
+        Absence of precipitation for at least 60 minutes
+      </div>
+    </section>
+
+    <!-- HOURLY -->
+    <section class="hourly">
+      <h2>Today</h2>
+
+      <div class="hourly-list">
+        <div class="hour">
+          <span class="time">8:00 PM</span>
+          <i class="fa-solid fa-cloud-sun"></i>
+          <span class="temp">26°c</span>
+        </div>
+        <div class="hour">
+          <span class="time">9:00 PM</span>
+          <i class="fa-solid fa-cloud"></i>
+          <span class="temp">23°c</span>
+        </div>
+        <div class="hour">
+          <span class="time">10:00 PM</span>
+          <i class="fa-solid fa-cloud-rain"></i>
+          <span class="temp">21°c</span>
+        </div>
+        <div class="hour">
+          <span class="time">11:00 PM</span>
+          <i class="fa-solid fa-cloud-moon"></i>
+          <span class="temp">18°c</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAV -->
+    <nav class="bottom-nav">
+      <a href="#" class="active"><i class="fa-solid fa-house"></i><span>Home</span></a>
+      <a href="#"><i class="fa-solid fa-calendar-day"></i><span>Today</span></a>
+      <a href="#"><i class="fa-solid fa-clock"></i><span>Hourly</span></a>
+      <a href="#"><i class="fa-solid fa-calendar"></i><span>Daily</span></a>
+    </nav>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
